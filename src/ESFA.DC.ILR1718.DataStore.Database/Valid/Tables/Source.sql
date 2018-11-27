@@ -1,4 +1,5 @@
 ﻿CREATE TABLE [Valid].[Source] (
+	[ID]				INT		   IDENTITY (1, 1) NOT NULL,
     [ProtectiveMarking]   VARCHAR (30)  NULL,
     [UKPRN]               INT           NOT NULL,
     [SoftwareSupplier]    VARCHAR (40)  NULL,
@@ -7,6 +8,7 @@
     [SerialNo]            VARCHAR (2)   NULL,
     [DateTime]            DATETIME      NULL,
     [ReferenceData]       VARCHAR (100) NULL,
-    [ComponentSetVersion] VARCHAR (20)  NULL
+    [ComponentSetVersion] VARCHAR (20)  NULL,
+	CONSTRAINT [PK_Source] PRIMARY KEY ([ID])
 );
 
