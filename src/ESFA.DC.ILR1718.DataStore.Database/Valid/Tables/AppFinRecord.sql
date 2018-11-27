@@ -10,8 +10,3 @@
 	CONSTRAINT [PK_AppFinRecord] PRIMARY KEY ([ID])
 );
 
-
-GO
-CREATE CLUSTERED INDEX [IX_Valid_AppFinRecord]
-    ON [Valid].[AppFinRecord]([UKPRN] ASC, [LearnRefNumber] ASC, [AimSeqNumber] ASC, [AFinType] ASC);
-

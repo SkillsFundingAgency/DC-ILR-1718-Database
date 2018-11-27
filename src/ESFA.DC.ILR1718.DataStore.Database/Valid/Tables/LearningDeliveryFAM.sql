@@ -9,9 +9,3 @@
     [LearnDelFAMDateTo]   DATE         NULL,
 	CONSTRAINT [PK_LearningDeliveryFAM] PRIMARY KEY ([ID])
 );
-
-
-GO
-CREATE CLUSTERED INDEX [IX_Valid_LearningDeliveryFAM]
-    ON [Valid].[LearningDeliveryFAM]([UKPRN] ASC, [LearnRefNumber] ASC, [AimSeqNumber] ASC, [LearnDelFAMType] ASC, [LearnDelFAMDateFrom] ASC);
-

@@ -10,9 +10,3 @@
     [WorkPlaceEmpId]     INT          NULL,
 	CONSTRAINT [PK_LearningDeliveryWorkPlacement] PRIMARY KEY ([ID])
 );
-
-
-GO
-CREATE CLUSTERED INDEX [IX_Valid_LearningDeliveryWorkPlacement]
-    ON [Valid].[LearningDeliveryWorkPlacement]([UKPRN] ASC, [LearnRefNumber] ASC, [AimSeqNumber] ASC, [WorkPlaceStartDate] ASC, [WorkPlaceMode] ASC, [WorkPlaceEmpId] ASC);
-

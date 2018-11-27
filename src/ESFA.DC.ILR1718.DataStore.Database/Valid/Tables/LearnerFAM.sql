@@ -6,9 +6,3 @@
     [LearnFAMCode]   INT          NOT NULL,
 	CONSTRAINT [PK_LearnerFAM] PRIMARY KEY ([ID])
 );
-
-
-GO
-CREATE CLUSTERED INDEX [IX_Valid_LearnerFAM]
-    ON [Valid].[LearnerFAM]([UKPRN] ASC, [LearnRefNumber] ASC);
-

@@ -9,9 +9,3 @@
     [OutCollDate]    DATE         NOT NULL,
 	CONSTRAINT [PK_DPOutcome] PRIMARY KEY ([ID])
 );
-
-
-GO
-CREATE CLUSTERED INDEX [IX_Valid_DPOutcome]
-    ON [Valid].[DPOutcome]([UKPRN] ASC, [LearnRefNumber] ASC, [OutType] ASC, [OutCode] ASC, [OutStartDate] ASC);
-

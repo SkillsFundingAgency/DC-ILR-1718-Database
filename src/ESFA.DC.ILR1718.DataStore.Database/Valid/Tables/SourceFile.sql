@@ -10,9 +10,3 @@
     [DateTime]            DATETIME     NULL,
 	CONSTRAINT [PK_SourceFile] PRIMARY KEY ([ID])
 );
-
-
-GO
-CREATE CLUSTERED INDEX [IX_Valid_SourceFile]
-    ON [Valid].[SourceFile]([SourceFileName] ASC);
-
